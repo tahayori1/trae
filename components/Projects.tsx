@@ -27,8 +27,9 @@ const Projects: React.FC = () => {
                 <div className="overflow-hidden relative">
                   <img 
                     src={project.image} 
-                    alt={project.title}
-                    className="w-full h-auto object-cover transition-transform duration-1000 ease-[cubic-bezier(0.25,1,0.5,1)] group-hover:scale-[1.02]"
+                    alt={`Architectural Kitchen Design - ${project.subtitle} - ${project.title}`}
+                    className="w-full h-full object-cover transition-transform duration-1000 ease-[cubic-bezier(0.25,1,0.5,1)] group-hover:scale-[1.02]"
+                    loading="lazy"
                   />
                   {/* Hover Overlay */}
                   <div className="absolute inset-0 bg-stone-900/0 group-hover:bg-stone-900/5 transition-colors duration-500"></div>
